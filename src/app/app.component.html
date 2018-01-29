@@ -1,20 +1,35 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+<div class="row topBar">
+  <!-- all of the links to the different sections of the website -->
+  <a routerLink="/work" class="section">Work Experience</a>
+    <a routerLink="/skills" class="section">Skills</a>
+    <a routerLink="/projects" class="section">Projects</a>
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
 
+<div class="row bottomBar">
+    <!-- all of the links to the different sections of the website -->
+    <span>Nicolas Tremblay</span>
+    <p>
+        <a href="mailto:ns.tremblay@gmail.com">ns.tremblay@gmail.com</a>
+      </p>
+  </div>
+
+<router-outlet></router-outlet>
+
+<!-- 
+<div fxLayout.lt-sm="column" fxLayout.gt-xs="row" fxFlex>
+
+  
+  <div fxFlex fxFlex.gt-xs="70" fxFlexOrder.gt-xs="1" fxFlexOrder.lt-sm="2"  class="content">
+  </div>
+  <div fxFlex fxFlex.gt-xs="30" fxFlexOrder.gt-xs="2" fxFlexOrder.lt-sm="1">
+    <p fxHide fxShow.gt-sm class="name">Nicolas Tremblay</p>
+    <p fxHide fxShow.sm class="name nameMiddle">Nicolas Tremblay</p>
+    <p fxHide fxShow.lt-sm class="name nameSmall">Nicolas Tremblay</p>
+    <mat-nav-list>
+          <a mat-list-item routerLink="/skills" [ngClass]="(currentSection=='skills')?'selected-item':''"> <span class="linkText">Skills</span> </a>
+          <a mat-list-item routerLink="/projects" [ngClass]="(currentSection=='projects')?'selected-item':''"> <span class="linkText">Projects</span> </a>
+          <a mat-list-item routerLink="/volunteering" [ngClass]="(currentSection=='volunteering')?'selected-item':''"> <span class="linkText">Volunteering</span> </a>
+          <a mat-list-item routerLink="/work" [ngClass]="(currentSection=='work')?'selected-item':''"> <span class="linkText">Work Experience</span> </a>
+       </mat-nav-list>
+  </div>
+</div> -->

@@ -1,0 +1,41 @@
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 6em;
+    font-weight: 100;
+    margin-top:0px;
+}
+
+h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 3em;
+    font-weight: 100;
+    margin-top:0px;
+}
+
+:host(.active) {
+    background-color:blue;
+}
+
+.workItem{
+    background-color:white;
+    border-radius: 1em;
+    margin-top:1em;
+    margin-left: 0px;
+    margin-right: 0px;
+    max-width:1500px;
+    color:black;
+    padding:1em;
+  }
+
+  .projectItem > p{
+      margin:0px;
+      font-size:1.2em;
+  }
+
+  .projectItem > h2{
+    margin-bottom:0.8em;
+}
+
+  .projectItem{
+      margin-top:20px;
+  }

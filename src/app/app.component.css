@@ -1,0 +1,93 @@
+
+@font-face {
+	font-family: "Gotham";
+	src: url("/assets/fonts/Gotham/Gotham.otf");
+}
+.nameAndSections{
+
+    height:100%;
+    width:30%
+}
+.nameSection{
+    font-size: 6em;
+    font-weight: 100;
+}
+
+.name{
+    position:relative;
+    right:0px;
+    top:0px;
+    margin-top:0px;
+    margin-bottom:0px;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+    width:100%;
+    font-size:5em;
+
+}
+.nameMiddle{
+    font-size:3.5em;
+}
+
+.nameSmall{
+    font-size:3em
+}
+
+
+.profileImage {
+    width:100%;
+}
+
+
+
+.linkText{
+    float:right;
+}
+
+.selected-item{
+    background-color: #0069c0 !important;
+    color: white;
+    border-radius: 10px;
+}
+
+
+.mat-list-item:hover {
+    border-radius: 10px !important;
+}
+
+.mat-list-item-ripple .mat-ripple{
+    border-radius: 10px !important;
+}
+
+.section{
+    font-family: 'Gotham';
+    font-size: 1.3em;
+    padding:15px;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.7);
+
+}
+
+.section:hover{
+    border-bottom: 3px solid black;
+}
+
+.topBar{
+    height: 3em;
+    text-align: center
+
+}
+
+
+.bottomBar{
+    font-family: 'Gotham';
+    letter-spacing: 23px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+
+}  
+
+p{
+    letter-spacing: 0px;
+
+}
