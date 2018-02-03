@@ -1,15 +1,16 @@
 <div class="row topBar">
   <!-- all of the links to the different sections of the website -->
-  <a routerLink="/work" class="section">Work Experience</a>
-    <a routerLink="/skills" class="section">Skills</a>
-    <a routerLink="/projects" class="section">Projects</a>
+  <a routerLink="/work" [ngClass]="{'current_section': currentSection=='work' }" class="section">Work Experience</a>
+    <!-- <a routerLink="/skills" class="section">Skills</a> -->
+    <a routerLink="/projects" [ngClass]="{'current_section': currentSection=='projects' }" class="section">Projects</a>
 </div>
 
 <div class="row bottomBar">
     <!-- all of the links to the different sections of the website -->
-    <span>Nicolas Tremblay</span>
+    <br><br>
+    <span class="name">Nicolas Tremblay</span>
     <p>
-        <a href="mailto:ns.tremblay@gmail.com">ns.tremblay@gmail.com</a>
+        <a href="mailto:ns.tremblay@gmail.com">ns.tremblay@gmail.com</a> | <a href="https://github.com/NsTremblay/">GitHub</a> | <a href="https://www.linkedin.com/in/tremblaynicolas/">LinkedIn</a>
       </p>
   </div>
 

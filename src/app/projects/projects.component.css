@@ -39,3 +39,99 @@ h2{
   .projectItem{
       margin-top:20px;
   }
+
+  @font-face {
+	font-family: "Gotham";
+	src: url("/assets/fonts/Gotham/Gotham.otf");
+}
+
+.name{
+	font-family: 'Gotham';
+	margin-bottom:15px;
+	font-weight:light; font-size:3.5em;
+}
+
+h1{
+  font-family: 'Roboto', sans-serif;
+  font-size: 6em;
+  font-weight: 100;
+  margin-top:0px;
+}
+
+.centerNameText{
+  text-align: center;
+}
+
+.institution{
+  font-size: 20px;
+  font-weight: bold;
+  color: #474747;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.institutionDescription{
+	font-size: 15px;
+	font-weight: normal;
+	color: #474747;
+	line-height: normal;
+	margin:0px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.workTitle{
+	font-size: 20px;
+  font-weight: bold;
+  color: #474747;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.workDescription{
+	font-size: 15px;
+	font-weight: normal;
+	color: #474747;
+	line-height: normal;
+	margin:0px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.sideleft{
+	font-family: 'Gotham';
+	font-size:1.1em;
+	background-color: rgba(255, 255, 255, 0.8);
+
+}
+
+.nameMainContainer {
+	margin-bottom:3em;
+}
+
+.educationSection{
+    margin-bottom: 5em;
+    margin-top:3em;
+    word-wrap: break-word;
+    margin-left:15px;
+    margin-right: 15px;
+}
+
+.experienceSection{
+    margin-bottom:50px;
+    word-wrap: break-word;
+    margin-left:15px;
+    margin-right: 15px;
+}
+
+.skillsImage{
+	width:100%;
+	max-width:500px;
+}
+
+span{
+	background-color: rgba(255, 255, 255, 0.8);
+
+}
+
+.conferenceTitle{
+    font-family: "Gotham";
+    text-align: center;
+}

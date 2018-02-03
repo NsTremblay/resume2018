@@ -12,11 +12,11 @@ import { AppComponent } from './app.component';
 import { MyOwnCustomMaterialModule } from './material.module';
 
 const appRoutes: Routes = [
-  { path: 'skills', component: SkillsComponent, data: { section: 'skills' } },
+  // { path: 'skills', component: SkillsComponent, data: { section: 'skills' } },
   { path: 'projects', component: ProjectsComponent, data: { section: 'projects' } },
-  { path: 'volunteering', component: VolunteeringComponent, data: { section: 'volunteering' } },
+  // { path: 'volunteering', component: VolunteeringComponent, data: { section: 'volunteering' } },
   { path: 'work', component: WorkExperienceComponent, data: { section: 'work' } },
-  { path: '**', redirectTo: '/skills', pathMatch: 'full' },
+  { path: '**', redirectTo: '/work', pathMatch: 'full' },
 
 ];
 
