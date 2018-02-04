@@ -36,7 +36,7 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes),
     HttpModule
   ],
-  providers: [{provide: APP_BASE_HREF, useValue: '/a'}],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
