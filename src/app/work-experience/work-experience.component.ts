@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
+import {DOCUMENT} from "@angular/platform-browser";
 
 @Component({
   selector: 'app-work-experience',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WorkExperienceComponent implements OnInit {
 
-  constructor() { }
+  baseRef:string;
+
+  constructor(@Inject(DOCUMENT) private document) {
+    console.log(location.pathname);
+  }
 
   ngOnInit() {
+    let bases = this.document.getElementsByTagName('base');
+    this.baseRef = bases[0].baseURI;
   }
 
 }

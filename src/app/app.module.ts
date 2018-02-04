@@ -11,6 +11,8 @@ import { AppComponent } from './app.component';
 
 import { MyOwnCustomMaterialModule } from './material.module';
 
+import {APP_BASE_HREF} from '@angular/common';
+
 const appRoutes: Routes = [
   // { path: 'skills', component: SkillsComponent, data: { section: 'skills' } },
   { path: 'projects', component: ProjectsComponent, data: { section: 'projects' } },
@@ -34,7 +36,7 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes),
     HttpModule
   ],
-  providers: [],
+  providers: [{provide: APP_BASE_HREF, useValue: '/a'}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
